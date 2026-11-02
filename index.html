@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Today</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+
+    <header>
+      <p id="dateText"></p>
+      <h1 id="greetingText"></h1>
+    </header>
+
+    <section class="progress">
+      <div class="track"><div id="progressBar"></div></div>
+      <p id="progressText"></p>
+    </section>
+
+    <form id="addForm">
+      <input id="taskInput" type="text" placeholder="What will you do today?" maxlength="100" autocomplete="off">
+      <button type="submit">Add</button>
+    </form>
+
+    <ul id="taskList"></ul>
+
+    <p id="emptyText" hidden>A fresh day. Add the things you want to finish today.</p>
+    <p id="allDoneText" hidden>All done for today. Well done.</p>
+
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
